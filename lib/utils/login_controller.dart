@@ -28,6 +28,7 @@ class LoginController extends GetxController {
       if (response.statusCode == 200) {
         loading.value = false;
         Get.snackbar('Login Successful', 'congratulations');
+        Get.offNamed('/secondPage');
       } else {
         loading.value = false;
         Get.snackbar('Login Failed', data['error']);
@@ -38,3 +39,7 @@ class LoginController extends GetxController {
     }
   }
 }
+
+
+//email : eve.holt@reqres.in
+//password: cityslicka
