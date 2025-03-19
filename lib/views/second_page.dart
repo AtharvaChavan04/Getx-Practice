@@ -31,6 +31,11 @@ class _SecondPageState extends State<SecondPage> {
             text: 'Go to the Previous Screen',
             onPressed: () => Get.offNamed('/homeScreen'),
           ),
+          SizedBox(height: 10),
+          NavigationCard(
+            text: 'Go to the Login Screen',
+            onPressed: () => Get.offNamed('/loginPage'),
+          ),
           SizedBox(height: 30),
           Obx(() {
             return Column(
